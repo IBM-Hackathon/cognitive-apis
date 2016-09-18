@@ -6,9 +6,10 @@ This repository contains examples and How-to guides for the following Cognitive 
 
 * **MLA** recognizes crazy cool medical  things I don't know
 
-To see the example clone this repository and start the application:
+To see the example application clone this repository and start the application (NOT FINISHED YET!):
 
 ```
+npm install
 npm start
 ```
 
