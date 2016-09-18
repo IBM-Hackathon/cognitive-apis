@@ -1,0 +1,22 @@
+{
+  "APP": {
+    "LOCALES": ["de", "en"],
+    "PORT": 3000
+  },
+  "LOG": {
+    "CONSOLE": true,
+    "LEVEL": "info",
+    "FILE": {
+        "FILENAME": "application.log"
+    },
+    "CATEGORIES": {
+      "BACKEND": false,
+      "CORE": true,
+      "MOCK": false
+    }
+  },
+  "RGF_MODUL": {
+    "MOCK_ENABLED": false,
+    "URL": "http://build-docker-fue.services.local:6881/api"
+  }
+}

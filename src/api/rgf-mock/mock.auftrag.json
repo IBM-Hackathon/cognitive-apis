@@ -1,0 +1,46 @@
+{
+  "auftragId": "11111111",
+  "externeAuftragId": "42",
+  "glasdaten": {
+    "links": {
+      "bestellDaten": {
+        "refraktion": {
+          "refraktionFerne": {
+            "sph": 2.75,
+            "zyl": 1.0,
+            "ach": 56.0
+          },
+          "prisma1": {
+            "prisma": 2.2,
+            "basis": 3.3
+          },
+          "prisma2": {
+            "prisma": 4.4   ,
+            "basis": 5.5
+          },
+          "addition": 1.0
+        }
+      }
+    },
+    "rechts": {
+      "bestellDaten": {
+        "refraktion": {
+          "refraktionFerne": {
+            "sph": 3.1,
+            "zyl": 2.0,
+            "ach": 57.0
+          },
+          "prisma1": {
+            "prisma": 1.0,
+            "basis": 181.0
+          },
+          "prisma2": {
+            "prisma": 2.0,
+            "basis": 182.0
+          },
+          "addition": 99.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+[
+  {
+    "id": "header.banner.desc",
+    "defaultMessage": "Complex web apps made easy",
+    "message": "Komplexní aplikace jednodušše",
+    "description": "Description in header"
+  },
+  {
+    "id": "header.banner.title",
+    "defaultMessage": "React",
+    "message": "React",
+    "description": "Title in page header"
+  },
+  {
+    "id": "header.brand",
+    "defaultMessage": "Your Company Brand",
+    "message": "Vaše firma",
+    "description": "Brand name displayed in header"
+  },
+  {
+    "id": "navigation.about",
+    "defaultMessage": "About",
+    "message": "O nás",
+    "description": "About link in header"
+  },
+  {
+    "id": "navigation.contact",
+    "defaultMessage": "Contact",
+    "message": "Kontakt",
+    "description": "Contact link in header"
+  },
+  {
+    "id": "navigation.login",
+    "defaultMessage": "Log in",
+    "message": "Přihlásit",
+    "description": "Log in link in header"
+  },
+  {
+    "id": "navigation.signup",
+    "defaultMessage": "Sign up",
+    "message": "Registrace",
+    "description": "Sign up link in header"
+  },
+  {
+    "id": "navigation.separator.or",
+    "defaultMessage": "or",
+    "message": "nebo",
+    "description": "Last separator in list, lowercase \"or\""
+  },
+  {
+    "id": "QueryBuilder___ExecuteQuery",
+    "description": "Search button text",
+    "defaultMessage": "Search",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/index.js"
+    ]
+  },
+  {
+    "id": "QueryBuilder___ResetQuery",
+    "description": "Reset query to defaults button",
+    "defaultMessage": "Reset Defaults",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/index.js"
+    ]
+  },
+  {
+    "id": "QueryBuilder___TabQuery",
+    "description": "QueryBuilder query tab",
+    "defaultMessage": "Query",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/index.js"
+    ]
+  },
+  {
+    "id": "QueryBuilder___TabQueryDetails",
+    "description": "Query Builder details tab",
+    "defaultMessage": "Query Details",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/index.js"
+    ]
+  },
+  {
+    "id": "QueryBuilder___SelectedFields",
+    "description": "Label for selected fields component",
+    "defaultMessage": "Selected fields",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/index.js"
+    ]
+  },
+  {
+    "id": "QueryBuilder___LimitResults",
+    "description": "Limit results query details label",
+    "defaultMessage": "Limit Results",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/index.js"
+    ]
+  },
+  {
+    "id": "QueryBuilder___LimitResultsCount",
+    "description": "Limit results count label",
+    "defaultMessage": "Count",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/Limit/index.js"
+    ]
+  },
+  {
+    "id": "QueryBuilder___LimitResultsOffset",
+    "description": "Limit results offset label",
+    "defaultMessage": "Offset",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/Limit/index.js"
+    ]
+  },
+  {
+    "id": "QueryBuilder_Order___Asc",
+    "description": "Sorting ascending",
+    "defaultMessage": "ASC",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/Order/index.js"
+    ]
+  },
+  {
+    "id": "QueryBuilder_Order___Desc",
+    "description": "Sorting descending",
+    "defaultMessage": "DESC",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/Order/index.js"
+    ]
+  },
+  {
+    "id": "QueryBuilder_Manage___Modify",
+    "description": "Header for modification and rename entry",
+    "defaultMessage": "Rename & Modify",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/Manage/messages.js"
+    ]
+  },
+  {
+    "id": "QueryBuilder_Manage___New",
+    "description": "Header for new stored entry name field",
+    "defaultMessage": "Create New",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/Manage/messages.js"
+    ]
+  },
+  {
+    "id": "QueryBuilder_Manage___ReadOnly",
+    "description": "Read only note on stored objects",
+    "defaultMessage": "[read-only]",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/Manage/messages.js"
+    ]
+  },
+  {
+    "id": "QueryBuilder_Manage___Select",
+    "description": "Header for query selectbox",
+    "defaultMessage": "Select Query",
+    "message": "",
+    "files": [
+      "src/components/QueryBuilder/Manage/messages.js"
+    ]
+  }
+]

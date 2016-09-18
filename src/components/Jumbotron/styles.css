@@ -1,0 +1,7 @@
+@import '../variables.css';
+
+.root {
+  border-bottom: 2px solid var(--color-component);
+  background-color: var(--color-component-light);
+  padding: 20px 0;
+}
