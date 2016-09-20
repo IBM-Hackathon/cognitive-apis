@@ -268,7 +268,15 @@ In those facets you find that the whole message has a medium displeasure (`senti
 
 The API contains the following Unmut-related facets:
 
-**TODODOOOO**
+Facet path | Possible values | Related to
+--- | --- | ---
+`unmut/bearbeitungsqualitaet` | `Unmut`, `Kein-unmut` | Sentence
+`unmut/bearbeitungszeit` | `Unmut`, `Kein-unmut` | Sentence
+`unmut/inkasso` | `Unmut`, `Kein-unmut` | Sentence
+`unmut/unmut` | `Unmut`, `Kein-unmut` | Document
+`unmut/vertragsanliegen` | `Unmut`, `Kein-unmut` | Sentence
+`sentiment/Klasse` | `Kein`, `Schwacher`, `Mittlerer`, `Starker`, `Unmut` | Document
+`sentiment/numerisch` | `-1` - negative, `0` - neutral | Document
 
 ## MLA API
 
