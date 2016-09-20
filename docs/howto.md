@@ -264,11 +264,11 @@ The response to the request above looks like this:
 ]
 ```
 
-In those facets you find that the whole message has a medium displeasure (`sentiment/Klasse --> Mittlerer Unmut`) as well as that the displeasure is related to the contract (`unmut/vertragsanliegen --> Unmut`) and not to the quality of operations (`unmut/bearneitungsqualitaet --> Kein-unmut`).
+In those facets you find that the whole message has a medium displeasure (`sentiment/Klasse --> Mittlerer Unmut`) as well as that the displeasure is related to the contract (`unmut/vertragsanliegen --> Unmut`) and not to the quality of operations (`unmut/bearbeitungsqualitaet --> Kein-unmut`).
 
 The API contains the following Unmut-related facets:
 
-**TDODOOOO**
+**TODODOOOO**
 
 ## MLA API
 
