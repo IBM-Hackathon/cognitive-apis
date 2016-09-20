@@ -30,7 +30,7 @@ Enter a title for your application and submit the form.
 
 ![Register Application](./images/Screenshot_DevPortal_RegisterApp.png?raw=true)
 
-In the upcoming screen the Developer Portal shows your Client-Key and Client-Secret. Take a note of both keys - The Client Secret will only be shown once to you. You'll need the keys later when requesting the API.
+In the upcoming screen the Developer Portal shows your Client-Key and Client-Secret. Take a note of both keys - The Client Secret which is displayed in the green box in the top will only be shown once to you. You'll need the keys later when requesting the API.
 
 ![Client Key & Client Secret](./images/Screenshot_DevPortal_Secrets.png?raw=true)
 
