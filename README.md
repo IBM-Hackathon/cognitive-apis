@@ -1,10 +1,10 @@
-# IBM Cognitive APIs
+# IBM G-Cloud Cognitive APIs
 
-This repository contains examples and How-to guides for the following Cognitive APIs:
+This repository contains examples and how-to guides for the following Cognitive APIs available on the IBM German Cognitive Industry Cloud (G-Cloud):
 
 * **Unmut** recognize displeasure of customers in a natural written German text like E-Mails or letters from customers
 
-* **MLA** recognizes crazy cool medical  things I don't know
+* **MLA** recognizes medical synthoms and ...
 
 To see the example application clone this repository and start the application (NOT FINISHED YET!):
 
