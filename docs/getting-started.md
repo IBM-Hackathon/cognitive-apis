@@ -36,7 +36,7 @@ In the upcoming screen the Developer Portal shows your Client-Key and Client-Sec
 
 ## Subscribe APIs
 
-After you've created an application you can subscribe it to the Cognitive APIs. To do so select `API Products` from the Developer Portal's main menu. Then select `gcloud-services` from the list of API products.
+After you've created an application you can subscribe it to the [Cognitive APIs](https://cognitive-apis-g-cloud-dev.developer.eu.apiconnect.ibmcloud.com/node/115). To do so, select `API Products` from the Developer Portal's main menu. Then select `gcloud-services 1.0.1` from the list of API products.
 
 Finally subscribe to the `IBM Hackathon 2016 - Hamurg` plan by clicking the 'Subscribe' button and selecting your application in the upcoming popup dialog.
 
