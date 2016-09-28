@@ -4,16 +4,25 @@ This repository contains examples and how-to guides for the following Cognitive 
 
 * **Unmut** recognize displeasure of customers in a natural written German text like E-Mails or letters from customers
 
-* **MLA** recognizes medical synthoms and ...
+* **MLA** recognizes medical symptoms and disorders from natural written German texts
 
-To see the example application clone this repository and start the application (NOT FINISHED YET!):
-
-```
-npm install
-npm start
-```
-
-If you're interested in using the APIs in your own application go ahead reading:
+To use the Cognitive APIs you need to register your application and subscribe to Plan. To get started read the following:
 
 * [Getting started with Cognitive APIs](./docs/getting-started.md)
 * [How to use Cognitive APIs](./docs/howto.md)
+
+## Simple Sample Application
+
+The [sample application (app.js)](./app.js) shows you how to do requests against the APIs.
+
+To run the sample application you need to provide a valid Client-Key and -Secret (see [Getting started with Cognitive APIs](./docs/getting-started.md) to obtain them). If you have them, execute the following commands:
+
+```
+git clone git@github.com:IBM-Hackathon/cognitive-apis.git
+cd cognitive-apis/
+
+npm install
+npm start -- [CLIENT_KEY] [CLIENT_SECRET]
+```
+
+The return values of the APIs are explained in the [docs/](./docs/howto.md).
