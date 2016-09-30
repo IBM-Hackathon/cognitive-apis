@@ -1,3 +1,5 @@
+[Hamburg](https://github.com/IBM-Hackathon/Hamburg2016/wiki) > [Howto](https://github.com/IBM-Hackathon/Hamburg2016/wiki/Howto) > Cognitive APIs on IBM G-Cloud
+
 # IBM G-Cloud Cognitive APIs
 
 This repository contains examples and how-to guides for the following Cognitive APIs available on the IBM German Cognitive Industry Cloud (G-Cloud):
