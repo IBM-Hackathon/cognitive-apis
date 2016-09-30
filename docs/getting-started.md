@@ -1,4 +1,4 @@
-[Hamburg](https://github.com/IBM-Hackathon/Hamburg2016/wiki) > [Howto](https://github.com/IBM-Hackathon/Hamburg2016/wiki/Howto) > Cognitive APIs > Getting started
+[Hamburg](https://github.com/IBM-Hackathon/Hamburg2016/wiki) > [Howto](https://github.com/IBM-Hackathon/Hamburg2016/wiki/Howto) > [Cognitive APIs on G-Cloud](https://github.com/IBM-Hackathon/cognitive-apis) > Getting started
 
 # Getting started with Cognitive APIs
 
