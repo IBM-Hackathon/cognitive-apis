@@ -1,3 +1,5 @@
+[Hamburg](https://github.com/IBM-Hackathon/Hamburg2016/wiki) > Howto > Cognitive APIs > Getting started
+
 # Getting started with Cognitive APIs
 
 Your application must have authorization credentials to be able to use the Cognitive APIs. Those credentials need to be send in the HTTP header of each request to the API to identify the application and provide access.
