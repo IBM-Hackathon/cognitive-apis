@@ -1,6 +1,6 @@
-[Hamburg](https://github.com/IBM-Hackathon/Hamburg2016/wiki) > [Howto](https://github.com/IBM-Hackathon/Hamburg2016/wiki/Howto) > [Cognitive APIs on G-Cloud](https://github.com/IBM-Hackathon/cognitive-apis) > Getting started
+[Hamburg](https://github.com/IBM-Hackathon/Hamburg2016/wiki) > [Howto](https://github.com/IBM-Hackathon/Hamburg2016/wiki/Howto) > [Cognitive APIs on IBM G-Cloud](https://github.com/IBM-Hackathon/cognitive-apis) > Getting started
 
-# Getting started with Cognitive APIs
+# Getting started with Cognitive APIs on IBM G-Cloud
 
 Your application must have authorization credentials to be able to use the Cognitive APIs. Those credentials need to be send in the HTTP header of each request to the API to identify the application and provide access.
 
@@ -8,7 +8,7 @@ The following sections guide you to obtain those credentials.
 
 ## Prerequisites
 
-To be able to login to the Cognitive APIs Developer Portal a valid IBM ID is required. This can be the same one as you use to login to IBM Bluemix.
+To be able to login to the Cognitive APIs Developer Portal a valid IBM ID is required. This should be the same one as you use to login to IBM Bluemix.
 
 If you don't have one, sign up on [ibm.com](https://www.ibm.com/account/us-en/signup/register.html).
 
