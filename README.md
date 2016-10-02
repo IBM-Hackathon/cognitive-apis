@@ -20,7 +20,7 @@ The [sample application (app.js)](./app.js) shows you how to do requests against
 To run the sample application you need to provide a valid Client-Key and -Secret (see [Getting started with Cognitive APIs](./docs/getting-started.md) to obtain them). If you have them, execute the following commands:
 
 ```bash
-git clone git@github.com:IBM-Hackathon/cognitive-apis.git
+git clone https://github.com/IBM-Hackathon/cognitive-apis.git
 cd cognitive-apis/
 
 npm install
