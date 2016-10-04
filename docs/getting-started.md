@@ -2,6 +2,8 @@
 
 # Getting started with Cognitive APIs on IBM G-Cloud
 
+![Logo](./images/G-Cloud_label_250.png)
+
 Your application must have authorization credentials to be able to use the Cognitive APIs. Those credentials need to be send in the HTTP header of each request to the API to identify the application and provide access.
 
 The following sections guide you to obtain those credentials.
