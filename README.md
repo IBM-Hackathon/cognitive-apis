@@ -2,6 +2,8 @@
 
 # IBM G-Cloud Cognitive APIs
 
+![Logo](./docs/images/G-Cloud_label_250.png)
+
 This repository contains examples and how-to guides for the following Cognitive APIs available on the IBM German Cognitive Industry Cloud (G-Cloud):
 
 * **Unmut** recognize displeasure of customers in a natural written German text like E-Mails or letters from customers
