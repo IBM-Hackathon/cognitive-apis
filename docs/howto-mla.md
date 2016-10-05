@@ -2,18 +2,18 @@
 
 # Medical Linguistic Analysis (MLA) API
 
-MLA is an IBM Watson based API which provides ad-hoc text analysis, known as Real-time NLP to extract medical concepts (e.g. diagnoses, symptoms, ...) from texts (e.g. medical reports, discharge letters, ...) in naturally written german language.
+MLA is an IBM Watson based API which provides ad-hoc text analysis, known as Real-time NLP to extract medical concepts (e.g. diagnoses, symptoms, ...) from texts (e.g. medical reports, discharge letters, ...) in naturally written German language.
 
 Based on its various underlying linguistic models it provides 3 different features:
 * Diagnosis
-* Symptoms
+* Symptom
 * Medication
 
 ## Diagnosis
 
 The Diagnosis feature is able to detect medical diagnoses in free text and enrich the detected concept with an ICD-10 code. Furthermore, this feature is able to recognize the status of a diagnosis (positive, negative, suspected or status post) based on common wording. Negative diagnoses are indicated by phrases of negation (e.g. "keine Gastritis", "kein Anhalt für Gastritis" etc.). Suspected diagnoses are diagnoses which have not been verified yet (e.g. "Verdacht auf Gastritis"). Status Post Diagnoses are diagnoses that were made in the past but are usually still relevant pieces of information in a person’s medical history.
 
-The detection and mapping of diagnoses to ICD-10 codes provides a foundation for various areas of application e.g. billing/DRG, mapping to other languages, patient summaries or analytical and statistical analyses. Further information about the ICD-10 classification can be found at [http://www.who.int/classifications/icd/en/]. 
+The detection and mapping of diagnoses to ICD-10 codes provides a foundation for various areas of application e.g. billing/DRG, mapping to other languages, patient summaries or analytical and statistical analyses. Further information about the ICD-10 classification can be found at:  http://www.who.int/classifications/icd/en/
 
 The following example shows a request to the API using cURL:
 
@@ -31,9 +31,9 @@ The following table describes the request parameters:
 
 Parameter | Required | Description
 --- | --- | ---
-`body.text` | Yes | Text to be analyzed
-`header.x-ibm-client-id` | Yes | Application's Client-Key
-`header.x-ibm-client-secret` | Yes | Application's Client-Secret
+body.text | Yes | Text to be analyzed
+header.x-ibm-client-id | Yes | Application's Client-Key
+header.x-ibm-client-secret | Yes | Application's Client-Secret
 
 The response to the request above looks like this:
 
@@ -345,7 +345,7 @@ The response to the request above looks like this:
 }
 ```
 
-`metadata.textfacets` contains terms (including their mapped code - if applicable) found in the text mapped to various facets related to diagnosis:
+`metadata.textfacets` contains terms (including their mapped codes) found in the text mapped to various facets related to diagnosis:
 
 ```json
 {
@@ -386,23 +386,23 @@ The response to the request above looks like this:
 }
 ```
 
-The feature contains the following facets related to diagnosis:
+This feature provides the following facets related to diagnosis:
 
-* `diagnosis/negative` 
-* `diagnosis/positive` 
-* `diagnosis/statuspost` 
-* `diagnosis/suspected` 
+* `diagnosis/negative`
+* `diagnosis/positive`
+* `diagnosis/statuspost`
+* `diagnosis/suspected`
 
 Each of these facets has a value of the following syntax: `text` # \[ `code` \] \[ | `code` \]
 
-`text`: contains the medical term (a.k.a. covered text) as appeared within the analyzed text
-`code`: the mapped code (if present); multiple codes are separated by a vertical bar `|`; each code is prefixed with its corresponding type
+* `text` contains the medical term (a.k.a. covered text) as appeared within the analyzed text
+* `code` the mapped code (if present); multiple codes are separated by a vertical bar `|`; each code is prefixed with its corresponding type
 
-## Symptoms
+## Symptom
 
 The Symptom feature is able to detect medical symptoms in free text and enrich the detected concept with MedDRA and (if available) ICD-10 codes of the R group. Moreover, the status of the symptom (positive or negative) is recognized based on common phrases. Negative symptoms are indicated by phrases of negation (e.g. "keine Schmerzen", "Schmerzen wurden verneint" etc.). Positive symptoms are symptoms without an indication for negation.
 
-The detection and mapping of symptoms to MedDRA codes provides a foundation for various areas of application e.g. automatically assessing a person’s medical status, deriving possible differential diagnoses, patient summaries or statistical analyzes. Further information about MedDRA can be found at  [http://www.meddra.org/basics].
+The detection and mapping of symptoms to MedDRA codes provides a foundation for various areas of application e.g. automatically assessing a person’s medical status, deriving possible differential diagnoses, patient summaries or statistical analyzes. Further information about MedDRA can be found at:  http://www.meddra.org/basics
 
 The following example shows a request to the API using cURL:
 
@@ -611,7 +611,7 @@ The response to the request above looks like this:
 }
 ```
 
-`metadata.textfacets` contains terms (including their mapped code - if applicable) found in the text mapped to various facets related to symptoms:
+`metadata.textfacets` contains terms (including their mapped codes) found in the text mapped to various facets related to symptoms:
 
 ```json
 {
@@ -643,19 +643,19 @@ The response to the request above looks like this:
 }
 ```
 
-The feature contains the following facets related to diagnosis:
+The feature provides the following facets related to symptom:
 
 * `symptom/negative` 
 * `symptom/positive` 
 
 Each of these facets has a value of the following syntax: `text` # \[ `code` \] \[ | `code` \]
 
-`text`: contains the medical term (a.k.a. covered text) as appeared within the analyzed text
-`code`: the mapped code (if present); multiple codes are separated by a vertical bar `|`; each code is prefixed with its corresponding type
+* `text` contains the medical term (a.k.a. covered text) as appeared within the analyzed text
+* `code` the mapped code (if present); multiple codes are separated by a vertical bar `|`; each code is prefixed with its corresponding type
 
 ## Medication
 
-The Medication feature is able to detect drugs and/or active agents based on the ATC classification in free text. Moreover, this feature maps the detected drug or agent to its respective ATC code. The code can further be used for standardization purposes and provides a strong foundation for understanding a person’s current medication. Further information about the ATC Classification can be found at  [http://www.whocc.no/atc/structure_and_principles/] 
+The Medication feature is able to detect drugs and/or active agents based on the ATC classification in free text. Moreover, this feature maps the detected drug or agent to its respective ATC code. The code can further be used for standardization purposes and provides a strong foundation for understanding a person’s current medication. Further information about the ATC Classification can be found at: http://www.whocc.no/atc/structure_and_principles/ 
 
 The following example shows a request to the API using cURL:
 
@@ -892,7 +892,7 @@ The response to the request above looks like this:
 }
 ```
 
-`metadata.textfacets` contains terms (including their mapped code - if applicable) found in the text mapped to various facets related to medication:
+`metadata.textfacets` contains terms (including their mapped codes) found in the text mapped to various facets related to medication:
 
 ```json
 {
@@ -948,6 +948,6 @@ The following sample documents (discharge letters) could be used for testing/tri
   * [DischargeLetter_K_2.txt](https://github.com/IBM-Hackathon/cognitive-apis/blob/master/docs/samples/DischargeLetter_K_2.txt)
   * [DischargeLetter_K_3.txt](https://github.com/IBM-Hackathon/cognitive-apis/blob/master/docs/samples/DischargeLetter_K_3.txt)
 
-Furthermore, for testing of the concepts you could also use patient information leaflets of drugs publicly available in German under: [http://www.ema.europa.eu/ema/index.jsp?curl=pages/medicines/landing/epar_search.jsp&mid=WC0b01ac058001d125]
+Furthermore, for testing of the concepts you could also use patient information leaflets of drugs publicly available in German under: http://www.ema.europa.eu/ema/index.jsp?curl=pages/medicines/landing/epar_search.jsp&mid=WC0b01ac058001d125
 
-Moreover, you could also use Wikipedia entries about diseases, symptoms or drugs as sample documents like [https://de.wikipedia.org/wiki/Bradykardie]
+Moreover, you could also use Wikipedia entries about diseases, symptoms or drugs as sample documents like: https://de.wikipedia.org/wiki/Bradykardie
