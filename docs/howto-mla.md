@@ -6,7 +6,7 @@ The following example shows a request to the API using cURL:
 
 ```bash
 curl --request POST \
-    --url https://api.eu.apiconnect.ibmcloud.com/g-cloud-dev/cognitive-apis/mla/1.0.1/analysis/text \
+    --url https://api.eu.apiconnect.ibmcloud.com/g-cloud-dev/cognitive-apis/mla/1.0.2/analysis/text \
     --header 'accept: application/json' \
     --header 'content-type: application/json' \
     --header 'x-ibm-client-id: REPLACE_THIS_KEY' \

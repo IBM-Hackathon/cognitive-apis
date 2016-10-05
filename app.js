@@ -5,7 +5,7 @@ const CLIENT_SECRET = process.env.CLIENT_SECRET || process.argv[3] || 'REPLACE_T
 
 const options = {
   method: 'POST',
-  url: 'https://api.eu.apiconnect.ibmcloud.com/g-cloud-dev/cognitive-apis/unmut/1.0.1/analysis/text',
+  url: 'https://api.eu.apiconnect.ibmcloud.com/g-cloud-dev/cognitive-apis/unmut/1.0.2/analysis/text',
   headers: {
     'accept': 'application/json',
     'content-type': 'application/json',
