@@ -30,7 +30,6 @@ The response contains several facets:
 
 ```json
 {  
-   "content":"Ich bin sehr unzufrieden mit der Situation!",
    "metadata":{  
       "textfacets":[  
          {  
