@@ -1,4 +1,8 @@
-# Getting started with Cognitive APIs
+[Hamburg](https://github.com/IBM-Hackathon/Hamburg2016/wiki) > [Howto](https://github.com/IBM-Hackathon/Hamburg2016/wiki/Howto) > [Cognitive APIs on IBM G-Cloud](https://github.com/IBM-Hackathon/cognitive-apis) > Getting started
+
+# Getting started with Cognitive APIs on IBM G-Cloud
+
+![Logo](./images/G-Cloud_label_250.png)
 
 Your application must have authorization credentials to be able to use the Cognitive APIs. Those credentials need to be send in the HTTP header of each request to the API to identify the application and provide access.
 
@@ -6,7 +10,7 @@ The following sections guide you to obtain those credentials.
 
 ## Prerequisites
 
-To be able to login to the Cognitive APIs Developer Portal a valid IBM ID is required. This can be the same one as you use to login to IBM Bluemix.
+To be able to login to the Cognitive APIs Developer Portal a valid IBM ID is required. This should be the same one as you use to login to IBM Bluemix.
 
 If you don't have one, sign up on [ibm.com](https://www.ibm.com/account/us-en/signup/register.html).
 
@@ -38,7 +42,7 @@ In the upcoming screen the Developer Portal shows your Client-Key and Client-Sec
 
 After you've created an application you can subscribe it to the [Cognitive APIs](https://cognitive-apis-g-cloud-dev.developer.eu.apiconnect.ibmcloud.com/node/115). To do so, select `API Products` from the Developer Portal's main menu. Then select `gcloud-services 1.0.2` from the list of API products.
 
-Finally subscribe to the `IBM Hackathon 2016 - Hamurg` plan by clicking the 'Subscribe' button and selecting your application in the upcoming popup dialog.
+Finally subscribe to the `IBM Hackathon 2016 - Hamburg` plan by clicking the 'Subscribe' button and selecting your application in the upcoming popup dialog.
 
 ![Subscribe to Plan](./images/Screenshot_DevPortal_Subscribe.png?raw=true)
 
