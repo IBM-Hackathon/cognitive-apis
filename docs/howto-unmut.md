@@ -16,7 +16,7 @@ curl --request POST \
   --data '{"text":"Ich bin sehr unzufrieden mit der Situation!"}'
 ```
 
-For examples in other languages see the [Developer Portal](https://cognitive-apis-g-cloud-dev.developer.eu.apiconnect.ibmcloud.com/node/119).
+For examples in other languages see the [Developer Portal](https://cognitive-apis-g-cloud-dev.developer.eu.apiconnect.ibmcloud.com/node/132).
 
 The following table describes the request parameters:
 
