@@ -244,7 +244,7 @@ The response to the request above looks like this:
 * `medication/agent`
 * `medication/drug`
 
-The facet `medication/agent` has a value of the following syntax: \[ `agent` \] # \[ `code` \]
+The facet `medication/agent` has a value of the following syntax: \[ `agent` \] # \[ `code` \]  
 The facet `medication/drug` has a value of the following syntax: \[ `drug` \] # \[ `agent` \] # \[ `code` \]
 
 * `drug` the drug name (a.k.a. covered text) as appeared within the analyzed text
