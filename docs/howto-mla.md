@@ -11,7 +11,7 @@ Based on its various underlying linguistic models it provides 3 different featur
 
 ## Diagnosis
 
-The Diagnosis feature is able to detect medical diagnoses in free text and enrich the detected concept with an ICD-10 code. Furthermore, this feature is able to recognize the status of a diagnosis (positive, negative, suspected or status post) based on common wording. Negative diagnoses are indicated by phrases of negation (e.g. "keine Gastritis", "kein Anhalt für Gastritis" etc.). Suspected diagnoses are diagnoses which have not been verified yet (e.g. "Verdacht auf Gastritis"). Status Post Diagnoses are diagnoses that were made in the past but are usually still relevant pieces of information in a person's medical history.
+The Diagnosis feature is able to detect medical diagnoses in free text and enrich the detected concept with an ICD-10 (four character) code. Furthermore, this feature is able to recognize the status of a diagnosis (positive, negative, suspected or status post) based on common wording. Negative diagnoses are indicated by phrases of negation (e.g. "keine Gastritis", "kein Anhalt für Gastritis" etc.). Suspected diagnoses are diagnoses which have not been verified yet (e.g. "Verdacht auf Gastritis"). Status Post Diagnoses are diagnoses that were made in the past but are usually still relevant pieces of information in a person's medical history.
 
 The detection and mapping of diagnoses to ICD-10 codes provides a foundation for various areas of application e.g. billing/DRG, mapping to other languages, patient summaries or analytical and statistical analyses. Further information about the ICD-10 classification can be found at:  http://www.who.int/classifications/icd/en/
 
@@ -20,10 +20,10 @@ The following example shows a request to the API using cURL:
 ```bash
 curl --request POST \
   --url https://api.eu.apiconnect.ibmcloud.com/g-cloud-dev/cognitive-apis/mla/1.0.2/diagnosis \
-  --header 'accept: application/json' \
-  --header 'content-type: application/json' \
   --header 'x-ibm-client-id: REPLACE_THIS_KEY' \
   --header 'x-ibm-client-secret: REPLACE_THIS_KEY' \
+  --header 'accept: application/json' \
+  --header 'content-type: application/json' \
   --data '{"text":"Bei Max Mustermann wurde ein Fortschreiten der hepatalen Metastasierung bei st.p. Sigmakarzinom (ED: 2002) diagnositiziert. Es liegt ein V.a. pulmonale Absiedelungen vor. Es gibt keinen Anhalt für renale Secundaria."}'
 ```
 
@@ -33,11 +33,11 @@ The following table describes the request parameters:
 
 Parameter | Required | Description
 --- | --- | ---
-`body.text` | Yes | Text to be analyzed
 `header.x-ibm-client-id` | Yes | Application's Client-Key
 `header.x-ibm-client-secret` | Yes | Application's Client-Secret
 `header.accept` | Yes | Expected output content type. Always `application/json`
 `header.content-type` | Yes | Input content type. Always `application/json`
+`body.text` | Yes | Text to be analyzed
 
 The response to the request above looks like this:
 
@@ -82,9 +82,7 @@ The response to the request above looks like this:
 }
 ```
 
-`metadata.textfacets` contains terms (including their mapped codes) found in the text mapped to various facets related to diagnosis.
-
-This feature provides the following facets related to diagnosis:
+`metadata.textfacets` contains terms (including their mapped codes) found in the text mapped to one of the following facets related to diagnosis:
 
 * `diagnosis/negative`
 * `diagnosis/positive`
@@ -107,10 +105,10 @@ The following example shows a request to the API using cURL:
 ```bash
 curl --request POST \
   --url https://api.eu.apiconnect.ibmcloud.com/g-cloud-dev/cognitive-apis/mla/1.0.2/symptom \
-  --header 'accept: application/json' \
-  --header 'content-type: application/json' \
   --header 'x-ibm-client-id: REPLACE_THIS_KEY' \
   --header 'x-ibm-client-secret: REPLACE_THIS_KEY' \
+  --header 'accept: application/json' \
+  --header 'content-type: application/json' \
   --data '{"text":"Patientin Musterfrau berichtet über wiederholtes Erbrechen, Schmerzen im Unterbauch; Blutungen werden verneint."}'
 ```
 
@@ -120,11 +118,11 @@ The following table describes the request parameters:
 
 Parameter | Required | Description
 --- | --- | ---
-`body.text` | Yes | Text to be analyzed
 `header.x-ibm-client-id` | Yes | Application's Client-Key
 `header.x-ibm-client-secret` | Yes | Application's Client-Secret
 `header.accept` | Yes | Expected output content type. Always `application/json`
 `header.content-type` | Yes | Input content type. Always `application/json`
+`body.text` | Yes | Text to be analyzed
 
 The response to the request above looks like this:
 
@@ -164,9 +162,7 @@ The response to the request above looks like this:
 }
 ```
 
-`metadata.textfacets` contains terms (including their mapped codes) found in the text mapped to various facets related to symptoms.
-
-The feature provides the following facets related to symptom:
+`metadata.textfacets` contains terms (including their mapped codes) found in the text mapped to one of the following facets related to symptoms:
 
 * `symptom/negative`
 * `symptom/positive`
@@ -185,10 +181,10 @@ The following example shows a request to the API using cURL:
 ```bash
 curl --request POST \
   --url https://api.eu.apiconnect.ibmcloud.com/g-cloud-dev/cognitive-apis/mla/1.0.2/medication \
-  --header 'accept: application/json' \
-  --header 'content-type: application/json' \
   --header 'x-ibm-client-id: REPLACE_THIS_KEY' \
   --header 'x-ibm-client-secret: REPLACE_THIS_KEY' \
+  --header 'accept: application/json' \
+  --header 'content-type: application/json' \
   --data '{"text":"Die Patientin Musterfrau wurde mit 80mg ASS und 20mg Nexium behandelt. Die Verträglichkeit der medikamentösen Therapie mit Acetylsalicylsäure war gut."}'
 ```
 
@@ -198,11 +194,11 @@ The following table describes the request parameters:
 
 Parameter | Required | Description
 --- | --- | ---
-`body.text` | Yes | Text to be analyzed
 `header.x-ibm-client-id` | Yes | Application's Client-Key
 `header.x-ibm-client-secret` | Yes | Application's Client-Secret
 `header.accept` | Yes | Expected output content type. Always `application/json`
 `header.content-type` | Yes | Input content type. Always `application/json`
+`body.text` | Yes | Text to be analyzed
 
 The response to the request above looks like this:
 
@@ -243,32 +239,31 @@ The response to the request above looks like this:
 }
 ```
 
-`metadata.textfacets` contains terms (including their mapped codes) found in the text mapped to various facets related to medication. The feature contains the following facets related to medication:
+`metadata.textfacets` contains terms (including their mapped codes) found in the text mapped to one of the following facets related to medication:
 
 * `medication/agent`
 * `medication/drug`
 
-The facet `medication/agent` has a value of the following syntax: \[ `agent` \] # \[ `code` \]
+The facet `medication/agent` has a value of the following syntax: \[ `agent` \] # \[ `code` \]  
 The facet `medication/drug` has a value of the following syntax: \[ `drug` \] # \[ `agent` \] # \[ `code` \]
 
-`drug`: the drug name (a.k.a. covered text) as appeared within the analyzed text
-`agent`: the agent name (a.k.a. covered text) as appeared within the analyzed text
-`code`: the mapped ATC classification code
+* `drug` the drug name (a.k.a. covered text) as appeared within the analyzed text
+* `agent` the agent name (a.k.a. covered text) as appeared within the analyzed text
+* `code` the mapped ATC classification code
 
 ## Additional Resources
 
 The following sample documents (discharge letters) could be used for testing/trial:
 
 * With concepts related to ICD-10 subcategory I (Diseases of the circulatory system):
-  * [DischargeLetter_I_1.txt](./samples/DischargeLetter_I_1.txt)
-  * [DischargeLetter_I_2.txt](./samples/DischargeLetter_I_2.txt)
-  * [DischargeLetter_I_3.txt](./samples/DischargeLetter_I_3.txt)
-
+  * [DischargeLetterI1.txt](./samples/DischargeLetterI1.txt)
+  * [DischargeLetterI2.txt](./samples/DischargeLetterI2.txt)
+  * [DischargeLetterI3.txt](./samples/DischargeLetterI3.txt)
   
 * With concepts related to ICD-10 subcategory K (Diseases of the digestive system):
-  * [DischargeLetter_K_1.txt](./samples/DischargeLetter_K_1.txt)
-  * [DischargeLetter_K_2.txt](./samples/DischargeLetter_K_2.txt)
-  * [DischargeLetter_K_3.txt](./samples/DischargeLetter_K_3.txt)
+  * [DischargeLetterK1.txt](./samples/DischargeLetterK1.txt)
+  * [DischargeLetterK2.txt](./samples/DischargeLetterK2.txt)
+  * [DischargeLetterK3.txt](./samples/DischargeLetterK3.txt)
 
 Furthermore, for testing of the concepts you could also use patient information leaflets of drugs publicly available in German under: http://www.ema.europa.eu/ema/index.jsp?curl=pages/medicines/landing/epar_search.jsp&mid=WC0b01ac058001d125
 
