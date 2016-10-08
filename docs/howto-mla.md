@@ -47,7 +47,8 @@ The response to the request above looks like this:
     "textfacets": [
       {
         "path": [
-          "positivediagnosis"
+          "diagnosis",
+          "positive"
         ],
         "keyword": "hepatalen Metastasierung#ICD10:C78.7",
         "begin": 47,
@@ -55,7 +56,8 @@ The response to the request above looks like this:
       },
       {
         "path": [
-          "statuspostdiagnosis"
+          "diagnosis",
+          "statuspost"
         ],
         "keyword": "st.p. Sigmakarzinom#ICD10:C18.7",
         "begin": 76,
@@ -63,7 +65,8 @@ The response to the request above looks like this:
       },
       {
         "path": [
-          "suspecteddiagnosis"
+          "diagnosis",
+          "suspected"
         ],
         "keyword": "V.a. pulmonale Absiedelungen#ICD10:C78.0",
         "begin": 137,
@@ -71,7 +74,8 @@ The response to the request above looks like this:
       },
       {
         "path": [
-          "negativediagnosis"
+          "diagnosis",
+          "negative"
         ],
         "keyword": "keinen Anhalt für renale Secundaria#ICD10:C79.0",
         "begin": 179,
